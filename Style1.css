@@ -141,6 +141,7 @@ body {
     background-color: var(--raisin-black-3);
     font-size: 1.6rem;
     line-height: 1.5;
+    height: 300vh;
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -287,5 +288,34 @@ body {
 
 .search-container .search-field::-webkit-search-cancel-button { display: none; }
 
-.search-container
+.search-container .search-submit {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: var(--marigold);
+}
 
+.search-container .search-submit ion-icon { --ionicon-stroke-width:70px; }
+
+.search-container .search-close {
+    position: fixed;
+    inset: 0;
+    cursor: default;
+    z-index: -1;
+}
+
+.hero-banner { display: none; }
+
+.hero {
+    --section-padding: 60px;
+    margin-block-start: 84px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 100vh;
+    display: grid;
+    
+}
